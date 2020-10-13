@@ -1,0 +1,29 @@
+{
+	"name": "Background_White",
+	"plugin-id": "TiledBg",
+	"sid": 536719957425165,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "glowhorizontal",
+			"name": "GlowHorizontal"
+		},
+		{
+			"effectId": "glowvertical",
+			"name": "GlowVertical"
+		}
+	],
+	"image": {
+		"width": 12,
+		"height": 12,
+		"originX": 7.833333333333333,
+		"originY": 8.083333333333334,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8469583,
+		"useCollisionPoly": true
+	}
+}

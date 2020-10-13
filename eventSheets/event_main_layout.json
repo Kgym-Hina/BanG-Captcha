@@ -1,0 +1,18 @@
+{
+	"name": "Event_Main_Layout",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 656925711517207
+				}
+			],
+			"actions": [],
+			"sid": 628662327711169
+		}
+	],
+	"sid": 970875294428567
+}

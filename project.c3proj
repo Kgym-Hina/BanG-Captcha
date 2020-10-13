@@ -31,6 +31,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Rex_CSV",
+			"name": "CSV",
+			"author": "Rex.Rainbow",
+			"version": "1.0.0.0",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "glowhorizontal",
 			"name": "Glow horizontal",
@@ -50,14 +58,18 @@
 	"uniqueId": "l43bp78cd4y",
 	"objectTypes": {
 		"items": [
-			"White",
-			"CheckBox",
+			"Background_White",
+			"CheckBox_Bg",
 			"Text",
-			"Check",
-			"note_flick_",
-			"note_flick_top",
-			"Blue",
-			"Pics"
+			"CheckBox_Check",
+			"Icon_Bottom",
+			"Icon_Top",
+			"Background_Blue",
+			"Pics_Title",
+			"Pics_sel",
+			"Button_Bg",
+			"Button_Text",
+			"CSV"
 		],
 		"subfolders": []
 	},
@@ -69,13 +81,13 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"Main_Layout"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"Event_Main_Layout"
 		],
 		"subfolders": []
 	},
