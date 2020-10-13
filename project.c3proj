@@ -57,21 +57,57 @@
 	],
 	"uniqueId": "l43bp78cd4y",
 	"objectTypes": {
-		"items": [
-			"Background_White",
-			"CheckBox_Bg",
-			"Text",
-			"CheckBox_Check",
-			"Icon_Bottom",
-			"Icon_Top",
-			"Background_Blue",
-			"Pics_Title",
-			"Pics_sel",
-			"Button_Bg",
-			"Button_Text",
-			"CSV"
-		],
-		"subfolders": []
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Background_Blue",
+					"Background_White"
+				],
+				"subfolders": [],
+				"name": "Backgrouds"
+			},
+			{
+				"items": [
+					"Button_Bg",
+					"Button_Text"
+				],
+				"subfolders": [],
+				"name": "Buttons"
+			},
+			{
+				"items": [
+					"CheckBox_Bg",
+					"CheckBox_Check"
+				],
+				"subfolders": [],
+				"name": "CheckBoxes"
+			},
+			{
+				"items": [
+					"CSV",
+					"Text"
+				],
+				"subfolders": [],
+				"name": "Utils"
+			},
+			{
+				"items": [
+					"Icon_Bottom",
+					"Icon_Top"
+				],
+				"subfolders": [],
+				"name": "Icons"
+			},
+			{
+				"items": [
+					"Pics_sel",
+					"Pics_Title"
+				],
+				"subfolders": [],
+				"name": "Pictures"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
