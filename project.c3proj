@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 21902,
+	"savedWithRelease": 22000,
 	"name": "Captcha",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -8,26 +8,18 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "TiledBg",
-			"name": "Tiled Background",
+			"id": "AJAX",
+			"name": "AJAX",
 			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r220",
 			"bundled": false
 		},
 		{
 			"type": "plugin",
-			"id": "Sprite",
-			"name": "Sprite",
+			"id": "Browser",
+			"name": "Browser",
 			"author": "Scirra",
-			"version": "r219.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Text",
-			"name": "Text",
-			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r220",
 			"bundled": false
 		},
 		{
@@ -39,11 +31,43 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r220",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Touch",
+			"name": "Touch",
+			"author": "Scirra",
+			"version": "r220",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "TiledBg",
+			"name": "Tiled Background",
+			"author": "Scirra",
+			"version": "r220",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Sprite",
+			"name": "Sprite",
+			"author": "Scirra",
+			"version": "r220",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "glowhorizontal",
 			"name": "Glow horizontal",
 			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r220",
 			"bundled": false
 		},
 		{
@@ -51,27 +75,66 @@
 			"id": "glowvertical",
 			"name": "Glow vertical",
 			"author": "Scirra",
-			"version": "r219.2",
+			"version": "r220",
 			"bundled": false
 		}
 	],
 	"uniqueId": "l43bp78cd4y",
 	"objectTypes": {
-		"items": [
-			"Background_White",
-			"CheckBox_Bg",
-			"Text",
-			"CheckBox_Check",
-			"Icon_Bottom",
-			"Icon_Top",
-			"Background_Blue",
-			"Pics_Title",
-			"Pics_sel",
-			"Button_Bg",
-			"Button_Text",
-			"CSV"
-		],
-		"subfolders": []
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"AJAX",
+					"Browser",
+					"CSV",
+					"Text",
+					"Touch"
+				],
+				"subfolders": [],
+				"name": "Utils"
+			},
+			{
+				"items": [
+					"Background_Blue",
+					"Background_White"
+				],
+				"subfolders": [],
+				"name": "Backgrounds"
+			},
+			{
+				"items": [
+					"CheckBox_Bg",
+					"CheckBox_Check"
+				],
+				"subfolders": [],
+				"name": "Checkboxes"
+			},
+			{
+				"items": [
+					"Button_Bg",
+					"Button_Text"
+				],
+				"subfolders": [],
+				"name": "Buttons"
+			},
+			{
+				"items": [
+					"Icon_Bottom",
+					"Icon_Top"
+				],
+				"subfolders": [],
+				"name": "Icon_Slide"
+			},
+			{
+				"items": [
+					"Pics_sel",
+					"Pics_Title"
+				],
+				"subfolders": [],
+				"name": "Images"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],

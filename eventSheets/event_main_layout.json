@@ -2,6 +2,26 @@
 	"name": "Event_Main_Layout",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "Loaded",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 912353223731421
+		},
+		{
+			"eventType": "variable",
+			"name": "i",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 767900614866413
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -10,8 +30,177 @@
 					"sid": 656925711517207
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "request-url",
+					"objectClass": "AJAX",
+					"sid": 121637599207814,
+					"parameters": {
+						"tag": "\"database\"",
+						"url": "\"https://github.com/haohaostudio/BanG-Captcha/raw/data/Database.csv\""
+					}
+				}
+			],
 			"sid": 628662327711169
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 977127583494757,
+					"parameters": {
+						"tag": "\"database\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "alert",
+					"objectClass": "Browser",
+					"sid": 729698272103833,
+					"parameters": {
+						"message": "\"已加载数据库\""
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 942247490825061,
+					"parameters": {
+						"variable": "Loaded",
+						"value": "true"
+					}
+				},
+				{
+					"id": "stringtoalltables12",
+					"objectClass": "CSV",
+					"sid": 207213647915315,
+					"parameters": {
+						"json_string0": "AJAX.LastData"
+					}
+				}
+			],
+			"sid": 399709456272335
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Touch",
+					"sid": 579251555003535,
+					"parameters": {
+						"object": "CheckBox_Bg"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 126478366734489,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-boolean-eventvar",
+							"objectClass": "System",
+							"sid": 103472364098494,
+							"parameters": {
+								"variable": "Loaded"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 719675685566276,
+					"children": [
+						{
+							"eventType": "comment",
+							"text": "Go when value was set in row"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "foreachrow3",
+									"objectClass": "CSV",
+									"sid": 569722658503208
+								}
+							],
+							"actions": [],
+							"sid": 762123151863647,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "ıskeyınrow8",
+											"objectClass": "CSV",
+											"sid": 153687924634111,
+											"parameters": {
+												"key0": "CSV.CurRow"
+											}
+										}
+									],
+									"actions": [],
+									"sid": 672645112066865,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "compare-instance-variable",
+													"objectClass": "Pics_sel",
+													"sid": 231644857960642,
+													"parameters": {
+														"instance-variable": "ID",
+														"comparison": 0,
+														"value": "i"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "load-image-from-url",
+													"objectClass": "Pics_sel",
+													"sid": 878733689105353,
+													"parameters": {
+														"uri": "CSV.CurValue",
+														"size": "keep-current-size",
+														"cross-origin": "anonymous"
+													}
+												}
+											],
+											"sid": 489555872691608
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 419775435783227
+						}
+					],
+					"actions": [
+						{
+							"id": "alert",
+							"objectClass": "Browser",
+							"sid": 791190405680766,
+							"parameters": {
+								"message": "\"未加载数据库\""
+							}
+						}
+					],
+					"sid": 360378223913542
+				}
+			]
 		}
 	],
 	"sid": 970875294428567
