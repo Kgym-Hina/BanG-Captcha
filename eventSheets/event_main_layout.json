@@ -74,11 +74,11 @@
 					}
 				},
 				{
-					"id": "stringtoalltables12",
+					"id": "loadcsv1",
 					"objectClass": "CSV",
-					"sid": 207213647915315,
+					"sid": 980185372984238,
 					"parameters": {
-						"json_string0": "AJAX.LastData"
+						"csv_string0": "AJAX.LastData"
 					}
 				}
 			],
